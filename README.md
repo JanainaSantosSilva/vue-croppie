@@ -28,11 +28,11 @@ npm install vue-croppie --save
 TO use VueCroppie with Webpack, Parcel or other bundler
 
 ```js
-import Vue from 'vue';
+import { createApp } from 'vue'
 import VueCroppie from 'vue-croppie';
 import 'croppie/croppie.css' // import the croppie css manually
 
-Vue.use(VueCroppie);
+app.use(VueCroppie);
 ```
 
 ### Usage in Browser directly
@@ -43,7 +43,7 @@ Vue.use(VueCroppie);
   ...
 </body>
 <script>
-  const vm = new Vue({...});
+  createApp({...});
 </script>
 ```
 

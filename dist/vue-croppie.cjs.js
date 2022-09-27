@@ -139,13 +139,13 @@ var VueCroppieComponent = {
 };
 
 var VueCroppie = {
-  install: function install(Vue, options) {
-    Vue.component(VueCroppieComponent.name, VueCroppieComponent);
+  install: function install(app, options) {
+    app.component(VueCroppieComponent.name, VueCroppieComponent);
   }
 };
 
-if (window && window.Vue) {
-  Vue.use(VueCroppie);
+if (window && window.app) {
+  app.use(VueCroppie);
 }
 
 exports.default = VueCroppie;

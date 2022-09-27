@@ -1,4 +1,7 @@
 import Croppie from 'croppie';
+import emitter from 'tiny-emitter/instance'
+
+$emit: (...args) => emitter.emit(...args)
 
 var VueCroppieComponent = {
   name: 'VueCroppie',
@@ -133,13 +136,13 @@ var VueCroppieComponent = {
 };
 
 var VueCroppie = {
-  install: function install(Vue, options) {
+  install: function install(app, options) {
     Vue.component(VueCroppieComponent.name, VueCroppieComponent);
   }
 };
 
-if (window && window.Vue) {
-  Vue.use(VueCroppie);
+if (window && window.app) {
+  app.use(VueCroppie);
 }
 
 export default VueCroppie;

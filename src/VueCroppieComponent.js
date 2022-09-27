@@ -1,5 +1,7 @@
 import Croppie from 'croppie'
+import emitter from 'tiny-emitter/instance'
 
+$emit: (...args) => emitter.emit(...args)
 export default {
   name: 'VueCroppie',
   render(h){
