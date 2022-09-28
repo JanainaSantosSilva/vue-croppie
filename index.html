@@ -86,10 +86,11 @@
   </div>
 </div>
 <script>
-const { createApp } = Vue
+import { createApp } from 'vue'
+
+
 
 createApp({
-  el: '#app',
   mounted () {
     // Upon mounting of the component, we accessed the .bind({...})
     // function to put an initial image on the canvas.
@@ -157,7 +158,7 @@ createApp({
       console.log('Croppie was initialized');
     }
   }
-})
+}).mount('#app')
 </script>
 </body>
 
