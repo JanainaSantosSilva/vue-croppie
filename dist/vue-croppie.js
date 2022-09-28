@@ -1,4 +1,7 @@
 import { h } from 'vue'
+import emitter from "tiny-emitter/instance";
+
+const $emit = (...args) => emitter.emit(...args)
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :

@@ -2,7 +2,7 @@ import Croppie from 'croppie';
 import emitter from 'tiny-emitter/instance'
 import { h } from 'vue'
 
-$emit: (...args) => emitter.emit(...args)
+const $emit = (...args) => emitter.emit(...args)
 
 var VueCroppieComponent = {
   name: 'VueCroppie',
