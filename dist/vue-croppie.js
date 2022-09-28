@@ -1,3 +1,5 @@
+import { h } from 'vue'
+
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -1635,7 +1637,7 @@
 
 	var VueCroppieComponent = {
 	  name: 'VueCroppie',
-	  render: function render(h) {
+	  render: function render() {
 	    return h('div', {
 	      class: this.customClass,
 	      ref: 'croppieContainer',

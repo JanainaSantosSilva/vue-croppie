@@ -1,4 +1,5 @@
 'use strict';
+import { h } from 'vue'
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
@@ -8,7 +9,7 @@ var Croppie = _interopDefault(require('croppie'));
 
 var VueCroppieComponent = {
   name: 'VueCroppie',
-  render: function render(h) {
+  render: function render() {
     return h('div', {
       class: this.customClass,
       ref: 'croppieContainer',
