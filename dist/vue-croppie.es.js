@@ -137,7 +137,7 @@ var VueCroppieComponent = {
 
 var VueCroppie = {
   install: function install(app, options) {
-    Vue.component(VueCroppieComponent.name, VueCroppieComponent);
+    app.component(VueCroppieComponent.name, VueCroppieComponent);
   }
 };
 
